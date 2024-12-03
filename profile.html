@@ -12,6 +12,9 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
 </head>
 <body>
+
+
+
     <div id="wrapper-div">
     <!-- Top navigation bar -->
         <div class="top-nav">
@@ -38,10 +41,11 @@
     <!-- Profile Details -->
      <div id="parent-div" class="clearfix">
         <div id="div-profile-picture">
-            <div id="div-picture-container" title="Edit profile picture">
-                <div>
-                    <i class="fa-solid fa-arrow-up-from-bracket"></i>
-                </div>
+            <div id="div-picture-container" >
+                
+                <img src="assets/css/images/default-image.jpg" title="Profile picture" id="profile-pic"> 
+                    <label for="input-file"> <i class="fa-solid fa-arrow-up-from-bracket"></i> </label>
+                      <input type="file" accept="image/jpeg, image/png, image/jpg" id="input-file">               
             </div>
             <div id="div-name-container">
                 <h1 id="name-holder">Juan De la Cruz</h1>
@@ -94,6 +98,15 @@
         <div id="legal-information"> All rights reserved <i class="fa-regular fa-copyright"></i></div>
      </div>
     </div>
+
+    <script>
+        let profilePic = document.getElementById("profile-pic");
+        let inputFile = document.getElementById("input-file");
+
+        inputFile.onchange = function(){
+            profilePic.src = URL.createObjectURL(inputFile.files[0]);
+        }
+    </script>
 
 </body>
 </html>
