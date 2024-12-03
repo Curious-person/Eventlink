@@ -170,10 +170,34 @@
 #div-footer {
     width: 100%;
     background-color: lightgray;
-    min-height: 100px;
     margin-bottom: 20px;
-    text-align: center;
-    line-height: 100px;
+    line-height: normal;
+}
+
+#details-container {
+    float: right;
+    width: 15%;
+    background-color: white;
+    
+}
+
+#details-container h1 {
+    text-align: end;
+    color: #FA0200;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#details-container h2 {
+    color: #717171;
+    text-align: end;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#details-container h2:hover {
+    text-decoration: underline;
+    transition: 0.5s;
 }
 
 
