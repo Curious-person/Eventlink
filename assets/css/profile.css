@@ -194,6 +194,100 @@
     cursor: pointer;
 } 
 
+.popup {
+    position: absolute;
+    top: -150%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1.25);
+    width: 380px;
+    padding: 20px 30px;
+    background-color: white;
+    box-shadow: 2px 2px 5px 5px #cccccc;
+    border-radius: 12px;
+    transition: top 0ms ease-in-out 200ms,
+                opacity 200ms ease-in-out 0ms,
+                transform 200ms ease-in-out 0ms;
+}
+
+.popup.active {
+    top: 50%;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+    transition: top 0ms ease-in-out 0ms,
+                opacity 200ms ease-in-out 0ms,
+                transform 200ms ease-in-out 0ms;
+}
+
+.popup .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 15px;
+    height: 15px;
+    background-color: #cccccc;
+    text-align: center;
+    line-height: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.popup .form h2 {
+    text-align: center;
+    color: #1A4FEB;
+    margin: 10px 0px 20px;
+    font-size: 20px;
+}
+
+.popup .form .form-element {
+    margin: 15px 0px;
+}
+
+.popup .form .form-element label {
+    font-size: 15px;
+    color: black;
+}
+
+.popup .form .form-element input[type="text"],
+.popup .form .form-element #chapter {
+    margin-top: 5px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+}
+
+.popup .form #button-cancel  button{
+    background-color: #cccccc;
+    border: none;
+    border-radius: 6px;
+    width: 40%;
+    float: left;
+    cursor: pointer;
+}
+
+.popup .form #button-confirm button{
+    background-color: #FA0200;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    width: 40%;
+    float: right;
+    cursor: pointer;
+}
+
+.popup .form #button-cancel  button:hover {
+    background-color: gray;
+    transition: 0.3s;
+}
+
+.popup .form #button-confirm button:hover {
+    background-color: #cd0404;
+    transition: 0.3s;
+}
+
 #div-name-container {
     width: 80%;
     margin: auto;

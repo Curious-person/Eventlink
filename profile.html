@@ -12,9 +12,6 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
 </head>
 <body>
-
-
-
     <div id="wrapper-div">
     <!-- Top navigation bar -->
         <div class="top-nav">
@@ -44,7 +41,7 @@
             <div id="div-picture-container" >
                 
                 <img src="assets/css/images/default-image.jpg" title="Profile picture" id="profile-pic"> 
-                    <label for="input-file"> <i class="fa-solid fa-arrow-up-from-bracket"></i> </label>
+                    <label for="input-file"> <i class="fa-solid fa-arrow-up-from-bracket" title="Edit profile picture"></i> </label>
                       <input type="file" accept="image/jpeg, image/png, image/jpg" id="input-file">               
             </div>
             <div id="div-name-container">
@@ -56,17 +53,49 @@
                 <nav>
                     <ul>
                         <li>
-                            <h1> <i class="fa-solid fa-file-signature"></i>Name</h1>
-                            <h1> <i class="fa-solid fa-envelope"></i> Email</h1>
-                            <h1>  <i class="fa-solid fa-location-dot"></i> Chapter</h1>
-                            <button type="button" title="Edit profile">Edit</button>
+                            <h1 id="nameOrig"> <i class="fa-solid fa-file-signature"></i>Name</h1>
+                            <h1 id="emailOrig"> <i class="fa-solid fa-envelope"></i> Email</h1>
+                            <h1 id="chapterOrig">  <i class="fa-solid fa-location-dot"></i> Chapter</h1>
+                            <button type="button" title="Edit profile" id="edit-button">Edit</button>
                         </li>
                     </ul>
-                </nav>
-            
+                </nav>           
         </div>
      </div>
 
+     <div class="popup">
+        <div class="close-button">&times;</div>
+        <div class="form">
+            <h2>Edit Profile</h2>
+            <div class="form-element">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter Name">
+            </div>
+            <div class="form-element">
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="Enter Email">
+            </div>
+            <div class="form-element">
+                <label for="chapter">Chapter</label>
+                <select id="chapter">
+                    <option value="" disabled selected hidden>Edit Chapter</option>
+                    <option>Antipolo</option>
+                    <option>Arayat</option>
+                    <option>Biñan</option>
+                    <option>Carmona</option>
+                    <option>Castillejos</option>
+                </select>
+            </div>
+            <div class="main-container-button" class="clearfix">
+                <div class="form-element" id="button-cancel">
+                    <button>Cancel</button>
+                </div>
+                <div class="form-element" id="button-confirm">
+                    <button id="confirm">Confirm</button>
+                </div>
+            </div>
+        </div>
+     </div>
      <!-- Profile footer -->
      <div id="div-footer" class="clearfix">
         <div id="details-container">
@@ -99,14 +128,7 @@
      </div>
     </div>
 
-    <script>
-        let profilePic = document.getElementById("profile-pic");
-        let inputFile = document.getElementById("input-file");
-
-        inputFile.onchange = function(){
-            profilePic.src = URL.createObjectURL(inputFile.files[0]);
-        }
-    </script>
+    <script src="assets/js/profile.js"> </script>
 
 </body>
 </html>
