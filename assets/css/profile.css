@@ -9,7 +9,9 @@
     width: 80%;
     margin: auto;
     margin-top: 10px;
-
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .top-nav {
@@ -39,12 +41,17 @@
     cursor: pointer;
 }
 
+.button-logo h1:hover {
+    color: #cd0404;
+    transition: 0.3s;
+}
+
 #top-buttons {
     text-decoration: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+    border-bottom: #cccccc 2px solid;
 }
 
 #top-buttons a {
@@ -77,6 +84,7 @@
     width: 100%;
     text-align: center;
     margin-bottom: 10px;
+
 }
 
 
@@ -182,9 +190,9 @@
 
 #div-footer {
     width: 100%;
-    background-color: lightgray;
-    
+    border-top: #cccccc 2px solid;
     line-height: normal;
+    margin-top: auto;
 }
 
 #details-container {
@@ -194,7 +202,9 @@
     
 }
 
-#details-container h1 {
+#details-container a {
+    text-decoration: none;
+    font-weight: bold;
     text-align: end;
     color: #FA0200;
     font-size: 20px;
