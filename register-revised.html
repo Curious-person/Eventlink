@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Account</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="icon" type="logo-image" href="/assets/css/images/main-logo.png">
+    <link rel="stylesheet" href="assets/css/register-revised.css">
+    <link rel="icon" type="logo-image" href="/assets/css/images/main-logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="wrapper-div" class="clearfix">
+        <div class="register-pane">
+            <div class="register-container">
+                <div class="top-nav">
+                    <nav id="top-buttons">
+                        <a href="index.html" class="button-logo" title="Home">
+                            <img src="assets/css/images/main-logo.png" alt="Eventlink logo" class="logo-image">
+                            <h1 class="logo-name">EventLink</h1>
+                        </a>
+                    </nav>     
+                </div>
+                <div class="register-input-box">
+                    <div class="register-title">
+                        <h1>Register</h1>
+                        <h2>Register an account</h2>
+                    </div>
+
+    <!-- Register Form -->
+            <div class="register-details">
+                <form id="register-form">
+                    <div class="name-container" class="clearfix">
+                    <!-- First Name -->
+                        <div class="firstname-container">
+                            <div class="input-icon">
+                                    <input type="text" placeholder="First Name" id="firstname" required>
+                                </div>
+                            </div>
+                    <!-- Last Name -->
+                        <div class="lastname-container">
+                            <div class="input-icon">
+                                    <input type="text" placeholder="Last Name" id="lastname" required>
+                                </div>
+                            </div>
+                        </div>
+                    <!-- Email -->
+                            <div class="form-group">
+                                <div class="input-icon">
+                                    <i class="fa-solid fa-envelope"></i>
+                                        <input type="text" placeholder="Email" id="email" required>
+                                    </div>
+                            </div>
+                    <!-- Username -->
+                            <div class="form-group">
+                                <div class="input-icon">
+                                    <i class="fa-solid fa-user"></i>
+                                        <input type="text" placeholder="Username" id="username" required>
+                                    </div>
+                            </div>
+                    <!-- Password -->
+                            <div class="form-group">
+                                <div class="input-icon">
+                                    <i class="fa-solid fa-lock"></i>
+                                    <input type="password" placeholder="Password" id="password" required>
+                                </div>   
+                            </div>
+                    <!-- Confirm Password -->
+                    <div class="form-group">
+                        <div class="input-icon">
+                            <i class="fa-solid fa-unlock"></i>
+                            <input type="password" placeholder="Confirm Password" id="confirmpassword" required>
+                        </div>   
+                    </div>
+                    <!-- Chapter -->
+                            <div class="form-group">
+                                <div class="input-icon">
+                                    <select id="chapter" required>
+                                        <option value=" "  disabled selected hidden id="display-name">Select Chapter</option>
+                                        <option>Antipolo</option>
+                                        <option>Arayat</option>
+                                        <option>Biñan</option>
+                                        <option>Carmona</option>
+                                        <option>Castillejos</option>
+                                </div>   
+                            </div>
+
+                             <div class="form-group">
+                                <button type="submit" class="register-button" title="Enter Account">Enter</button>
+                             </div>
+                             <div class="form-group">
+                                <a href="login-revised.html" id="dont-have-account">Already have an account?</a>
+                             </div>
+                       
+                        </form>
+                        
+                    </div>
+                </div>          
+            </div>     
+        </div>
+        <div class="picture-pane">
+            <img src="assets/css/images/main-picture.png" alt="Main-picture">
+        </div>
+    </div>
+</body>
+</html>
