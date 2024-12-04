@@ -91,7 +91,7 @@
 
 .register-input-box {
     width: 100%;
-    margin-top: 2vh;
+    margin-top: 5vh;
 }
 
 .register-title {
@@ -168,21 +168,22 @@
 
 .name-container {
     overflow: hidden;
-    min-height: 10vh;
+    
     margin-bottom: 10px;
     height: 100%;
+    line-height: normal;
 }
 
 .firstname-container {
     width: 48%;
     float: left;
-    height: 80px;
+    height: 54.4px;
 }
 
 .lastname-container {
     width: 48%;
     float: right;
-   height: 80px;
+   height: 54.4px;
 }
 
 
