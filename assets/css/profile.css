@@ -245,7 +245,21 @@
     font-size: 20px;
 }
 
-.popup .form .form-element {
+
+.name-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: auto; 
+
+}
+
+.name-container h1 {
+    line-height: normal;
+
+}
+
+.popup .form .form-element .firstname-container{
     margin: 15px 0px;
 }
 
@@ -255,6 +269,9 @@
 }
 
 .popup .form .form-element input[type="text"],
+.popup .form .form-element input[type="email"],
+.popup .form .firstname-container input[type="text"],
+.popup .form .lastname-container input[type="text"],
 .popup .form .form-element #chapter {
     margin-top: 5px;
     display: block;
@@ -264,6 +281,17 @@
     border: 1px solid #cccccc;
     border-radius: 6px;
 }
+
+.popup .form .firstname-container {
+    float: left;
+    width: 50%;
+}
+
+.popup .form .lastname-container {
+    float: right;
+    width: 50%;
+}
+
 
 .popup .form #button-cancel  button{
     background-color: #cccccc;
@@ -299,8 +327,6 @@
     margin: auto;
     min-height: 100px;
     line-height: 100px;
-    
-    
 }
 
 #name-holder {
@@ -325,6 +351,10 @@
     
     background-color: white;
     
+}
+
+#chapter {
+    margin-bottom: 15px;
 }
 
 #details-container a {

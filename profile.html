@@ -49,7 +49,7 @@
                 
             </div>
             <div id="div-name-container">
-                <h1 id="name-holder">Juan De la Cruz</h1>
+                <h1 id="usernameOrig">Username</h1>
             </div>
         </div>
 
@@ -57,31 +57,44 @@
                 <nav>
                     <ul>
                         <li>
-                            <h1 id="nameOrig"> <i class="fa-solid fa-file-signature"></i>Name</h1>
+                            <div class="name-container">
+                                <h1 id="firstname"> <i class="fa-solid fa-file-signature"></i> Name</h1>    
+                                <h1 id="lastname"> LastName</h1>    
+                            </div>
                             <h1 id="emailOrig"> <i class="fa-solid fa-envelope"></i> Email</h1>
                             <h1 id="chapterOrig">  <i class="fa-solid fa-location-dot"></i> Chapter</h1>
-                            <button type="button" title="Edit profile" id="edit-button">Edit</button>
+                            <button type="button" title="Edit profile" id="edit-button"> <i class="fa-solid fa-gear"></i> Edit</button>
                         </li>
                     </ul>
                 </nav>           
         </div>
      </div>
-
+<!-- Edit Profile -->
      <div class="popup">
         <div class="close-button">&times;</div>
         <div class="form">
             <h2>Edit Profile</h2>
+            <div class="name-container">
+                <div class="firstname-container">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="fname" placeholder="Enter First Name">
+                </div>
+                <div class="lastname-container">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="lname" placeholder="Enter Last Name">
+                </div>
+            </div>
             <div class="form-element">
-                <label for="name">Name</label>
-                <input type="text" id="name" placeholder="Enter Name">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Enter Username">
             </div>
             <div class="form-element">
                 <label for="email">Email</label>
-                <input type="text" id="email" placeholder="Enter Email">
+                <input type="email" id="email" placeholder="Enter Email">
             </div>
             <div class="form-element">
                 <label for="chapter">Chapter</label>
-                <select id="chapter">
+                <select id="chapter" name="chapter">
                     <option value="" disabled selected hidden>Edit Chapter</option>
                     <option>Antipolo</option>
                     <option>Arayat</option>

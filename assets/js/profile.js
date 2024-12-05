@@ -1,28 +1,44 @@
-const name = document.getElementById("name");
+const username = document.getElementById("username");
+const fname = document.getElementById("fname");
+const lname = document.getElementById("lname");
 const email = document.getElementById("email");
 const chapter = document.getElementById("chapter");
 const confirm = document.getElementById("confirm");
-const outputNameTitle = document.getElementById("name-holder");
-const outputName = document.getElementById("nameOrig");
+
+const outputUsername = document.getElementById("usernameOrig");
+const outputFName = document.getElementById("firstname");
+const outputLName = document.getElementById("lastname");
 const outputEmail = document.getElementById("emailOrig");
 const outputChapter = document.getElementById("chapterOrig");
 
-//condition to check if the input is empty
-confirm.addEventListener("click", function() {
-    if (name.value === "" || email.value === "" || chapter.value === "") {
-        alert("Please fill out all fields");
-        return;
-    } else {
-//Inputs the details to profile section
-        dislayDetails();
-        document.querySelector(".popup").classList.remove("active");
+
+        //condition to check if the input is empty
+    function checkAndDisplayDetails() {
+        if (username.value === "" || fname.value === "" || lname.value === "" || email.value === "" || chapter.value === "") {
+            alert("Please fill out all fields");
+                return;
+            } else {
+        //Inputs the details to profile section
+                displayDetails();
+                document.querySelector(".popup").classList.remove("active");
+        }
+    }
+
+//Event listener for the confirm button
+confirm.addEventListener("click", checkAndDisplayDetails);
+
+// Event listener for the Enter key press
+document.addEventListener("keyup", function(event) {
+    if (event.key === "Enter") {
+        checkAndDisplayDetails();
     }
 });
 
 //Function to display the details
-function dislayDetails() {
-    outputNameTitle.innerHTML = name.value;
-    outputName.innerHTML = "<i class='fa-solid fa-file-signature'></i> " + name.value;
+function displayDetails() {
+    outputUsername.innerHTML = username.value;
+    outputFName.innerHTML = "<i class='fa-solid fa-file-signature'></i> " + fname.value;
+    outputLName.innerHTML = lname.value;
     outputEmail.innerHTML = "<i class='fa-solid fa-envelope'></i> " + email.value;
     outputChapter.innerHTML = "<i class='fa-solid fa-location-dot'></i> " + chapter.value;
 }
