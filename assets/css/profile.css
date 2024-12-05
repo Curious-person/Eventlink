@@ -91,7 +91,6 @@
 #div-profile-picture {
     width: 40%;
     float: left;
-    
     min-height: 400px;
     line-height: 400px;
     text-align: center;
@@ -114,15 +113,23 @@
     display: none;
   }
 
-#div-picture-container img {
+#picture-frame {
     background-color: lightgray;
-    border-radius: 100%;
+    border-radius: 50%;
     height: 290px;
     width: 290px;
     margin: auto;
     line-height: 290px;
     color: #717171;
+    overflow: hidden;
     font-size: 30px;
+}
+
+#div-picture-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 #div-picture-container label i {
@@ -296,6 +303,10 @@
     
 }
 
+#name-holder {
+    line-height: normal;
+}
+
 .clearfix::after {
     content: "";
     clear: both;
@@ -389,18 +400,23 @@
 @media (max-width: 860px) {
     #name-holder {
         font-size: 20px;
+        
     }
 
     #div-picture-container img {
         max-width: 100%;
-        max-height: 100%;
-        width: auto;
-        height: auto;
-        border-radius: 50%;
     }
 
     #div-picture-container {
         min-height: 220.15px;
+        max-width: auto;
+
+    }
+
+    #picture-frame {
+        height: 220.15px;
+        width: 220.15px;
+        line-height: 220.15px;
     }
 
 }
@@ -422,6 +438,12 @@
         min-height: 175.7px;
     }
 
+    #picture-frame {
+        height: 175.7px;
+        width: 175.7px;
+        line-height: 175.7px;
+    }
+
     #div-profile-picture {
         width: 100%;
         min-height: 175.7px;
@@ -436,6 +458,10 @@
 
     #name-holder {
         font-size: 15px;
+    }
+    #div-name-container {
+        min-height: 50px;
+
     }
 
 }
@@ -467,5 +493,10 @@
 
     #profile-title {
         font-size: 15px;
+    }
+
+    #div-name-container {
+        min-height: 50px;
+
     }
 }
