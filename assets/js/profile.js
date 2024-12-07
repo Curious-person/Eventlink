@@ -1,3 +1,4 @@
+//field to input the details
 const username = document.getElementById("username");
 const fname = document.getElementById("fname");
 const lname = document.getElementById("lname");
@@ -5,6 +6,7 @@ const email = document.getElementById("email");
 const chapter = document.getElementById("chapter");
 const confirm = document.getElementById("confirm");
 
+//field to output the details
 const outputUsername = document.getElementById("usernameOrig");
 const outputFName = document.getElementById("firstname");
 const outputLName = document.getElementById("lastname");
