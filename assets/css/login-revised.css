@@ -81,14 +81,14 @@
     background-color: white;
 }
 
-.button-logo:hover {
+/* .button-logo:hover {
     cursor: pointer;
 }
 
 .button-logo h1:hover {
     color: #cd0404;
     transition: 0.3s;
-}
+} */
 
 .login-input-box {
     width: 100%;
