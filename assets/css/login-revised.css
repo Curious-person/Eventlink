@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "Inknut Antiqua", serif;
+    font-family: "Roboto", sans-serif;
 }
 
 #wrapper-div {
@@ -68,9 +68,10 @@
 }
 
 .logo-name {
-    font-size: 36dp;
+    font-size: 26px;
     font-weight: bold;
     color: #FA0200;
+    font-family: "Inknut Antiqua", serif;
 }
 
 .button-logo {
@@ -102,13 +103,14 @@
 
 .login-title h1 {
     font-size: 36px;
-    line-height: 1.2; 
+    line-height: 1.2;
+    font-weight: 700;
 }
 
 .login-title h2 {
     font-size: 20px;
-    color: #717171;
-    line-height: 1.2; 
+    line-height: 1.2;
+    font-weight: 300; 
 }
 
 .login-details {
@@ -127,12 +129,18 @@
 }
 
 .form-group a {
-    font-size: 12px;
+    font-size: 16px;
     color: #717171;
 }
 
+.form-group input::placeholder {
+    color: #717171;
+    font-weight: 300;
+    font-size: 16px;
+}
 
-.login-button {
+
+/* .login-button {
     background-color: #2A66E3;
     color: white;
     font-weight: bold;
@@ -149,8 +157,11 @@
     box-shadow: #3373ff 3px 3px 3px;
     transition: 0.3s;
     cursor: pointer;
-} 
+}  */
 
+.btn {
+    padding: 8px 50px 8px 50px;
+}
 
 
 .input-icon {

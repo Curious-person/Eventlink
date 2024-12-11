@@ -2,7 +2,11 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "Inknut Antiqua", serif;
+    font-family: "Roboto", sans-serif;
+}
+
+:root {
+    --bs-body-font-family: "Roboto", sans-serif;
 }
 
 #wrapper-div {
@@ -83,9 +87,12 @@
     width: 100%;
     text-align: center;
     margin-bottom: 10px;
-
 }
 
+#profile-title {
+    font-size: 42px;
+    font-weight: 700;
+}
 
 
 #div-profile-picture {
@@ -130,6 +137,7 @@
     height: 100%;
     object-fit: cover;
     border-radius: 50%;
+    margin-bottom: 10px;
 }
 
 #div-picture-container label i {
@@ -171,14 +179,21 @@
 }
 
 #div-profile-details nav ul li h1 {
-    font-size: 15px;
-    font-weight: normal;
+    font-size: 16px;
+    font-weight: 300;
     
+}
+
+.name-container i,
+#emailOrig i,
+#chapterOrig i,
+#edit-button i {
+    margin-right: 8px; /* Adjust the value as needed */
 }
 
 
 
-#div-profile-details nav ul li button {
+/* #div-profile-details nav ul li button {
     background-color: #2A66E3;
     color: white;
     font-weight: bold;
@@ -187,18 +202,18 @@
     padding-left: 20px;
     padding-right: 20px;
     border-radius: 10%;
-}
+} */
 
 #div-profile-details div {
     line-height: 400px;
 }
 
-#div-profile-details nav ul li button:hover {
+/* #div-profile-details nav ul li button:hover {
     background-color: #1A4FEB;
     box-shadow: #3373ff 3px 3px 3px;
     transition: 0.3s;
     cursor: pointer;
-} 
+}  */
 
 .popup {
     position: absolute;
@@ -281,6 +296,39 @@
     border: 1px solid #cccccc;
     border-radius: 6px;
 }
+.popup .form h2 {
+    font-size: 28px;
+}
+
+.popup .form h2, label{
+    font-weight: 700 ;
+    margin-top: 8px;
+}
+
+.form-element label select{
+    padding: 10px;
+    outline: none;
+    border: 1px solid #cccccc;
+}
+
+#chapter {
+    border: none;
+    font-weight: normal;
+    padding: 0 50px 0 50px;
+    border-radius: 6px;
+    
+}
+
+#chapter option {
+    color: #717171;
+    font-size: 16px;
+}
+
+
+.popup .form input::placeholder {
+    font-weight: 300;
+    font-size: 16px;
+}
 
 .popup .form .firstname-container {
     float: left;
@@ -353,6 +401,25 @@
     
 }
 
+.nav .nav-link {
+    text-decoration: none;
+    font-weight: bold;
+    text-align: end;
+    color: #FA0200 !important;
+    font-size: 20px;
+    cursor: pointer;
+    
+}
+
+.nav-link a {
+    text-decoration: none;
+    font-weight: bold;
+    text-align: end;
+    color: #FA0200;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: "Inknut Antiqua", serif;
+}
 #chapter {
     margin-bottom: 15px;
 }

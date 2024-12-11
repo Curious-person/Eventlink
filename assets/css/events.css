@@ -1,0 +1,9 @@
+.nav-link a {
+    text-decoration: none;
+    font-weight: bold;
+    text-align: end;
+    color: #FA0200;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: "Inknut Antiqua", serif;
+}

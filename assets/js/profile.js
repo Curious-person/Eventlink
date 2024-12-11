@@ -47,10 +47,12 @@ function displayDetails() {
 
 //Profile picture upload
 let profilePic = document.getElementById("profile-pic");
+let profilePic1 = document.getElementById("profile-pic-small");
 let inputFile = document.getElementById("input-file");
 
 inputFile.onchange = function(){
     profilePic.src = URL.createObjectURL(inputFile.files[0]);
+    profilePic1.src = URL.createObjectURL(inputFile.files[0]);
 }
 
 document.querySelector("#edit-button").addEventListener("click", function() {
